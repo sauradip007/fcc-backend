@@ -8,7 +8,7 @@ console.log("Hello World");
 // })
 
 app.get("/json", (req, res) => {
-  const obj = { message: "Hello json" };
+  const obj = { "message": "Hello json" };
   res.json(obj);
 });
 app.use("/public", express.static("public"));
